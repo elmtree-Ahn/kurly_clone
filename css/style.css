@@ -1,0 +1,63 @@
+:root {
+  /* COLOR */
+  --color-black: #333333;
+  --color-bright-black: #4c4c4c;
+  --color-purple: #5f0080;
+  --color-bright-purple: #bd76ff;
+  --color-red: #fa622f;
+
+  /* SIZE */
+  --main-width: 1050px;
+
+  /* FONTSIZE */
+  --font-sm: 12px;
+  --font-base: 16px;
+  --font-lg: 28px;
+  --font-xl: 32px;
+}
+
+/* COMMON */
+a {
+  display: block;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+header .header__usermenu {
+  display: flex;
+  justify-content: space-between;
+  width: var(--main-width);
+}
+
+header .header__usermenu img {
+  width: 121px;
+  height: 22px;
+}
+
+header .header__usermenu .list_menus {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-sm);
+}
+
+header .header__usermenu .list_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 37px;
+}
+header .header__usermenu .list_menu a {
+  display: flex;
+  color: var(--color-bright-black);
+}
+
+header .header__usermenu .list_menu .join a {
+  display: flex;
+  color: var(--color-purple);
+}
