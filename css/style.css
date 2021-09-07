@@ -19,6 +19,7 @@
 /* COMMON */
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 a {
@@ -256,26 +257,26 @@ header .header__menus .inner .icons ul li:nth-child(1) {
 }
 
 /* 슬라이드 버튼 */
-.swiper-button-next-custom,
-.swiper-button-prev-custom {
+.mainSwiper-button-next,
+.mainSwiper-button-prev {
   display: none;
   position: absolute;
   top: 43%;
   z-index: 1;
 }
 
-.swiper-container:hover .swiper-button-prev-custom {
+.swiper-container:hover .mainSwiper-button-prev {
   display: block;
 }
 
-.swiper-container:hover .swiper-button-next-custom {
+.swiper-container:hover .mainSwiper-button-next {
   display: block;
 }
 
 .mainSwiper .swiper-button-next {
   display: none;
 }
-.mainSwiper .swiper-button-next-custom {
+.mainSwiper .mainSwiper-button-next {
   right: 102px;
   width: 52px;
   height: 52px;
@@ -289,7 +290,7 @@ header .header__menus .inner .icons ul li:nth-child(1) {
 .mainSwiper .swiper-button-prev {
   display: none;
 }
-.mainSwiper .swiper-button-prev-custom {
+.mainSwiper .mainSwiper-button-prev {
   left: 102px;
   width: 52px;
   height: 52px;
@@ -298,4 +299,12 @@ header .header__menus .inner .icons ul li:nth-child(1) {
   background-position: 50% 50%;
   background-size: 52px 52px;
   border-radius: 50%;
+}
+
+/* 이 상품 어때요? */
+.main_product .product_title {
+  padding: 79px 0 35px;
+  color: var(--color-black);
+  font-size: var(--font-lg);
+  font-weight: 500;
 }
