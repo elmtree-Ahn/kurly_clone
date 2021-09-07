@@ -221,3 +221,81 @@ header .header__menus .inner .icons ul {
 header .header__menus .inner .icons ul li:nth-child(1) {
   margin-right: 20px;
 }
+
+/* main slide */
+.swiper-container {
+  position: relative;
+}
+
+.mainSwiper .swiper-slide {
+  height: 370px;
+  width: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto auto;
+}
+
+.mainSwiper .slide_1 {
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1630490938.jpg");
+}
+
+.mainSwiper .slide_2 {
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1630394873.jpg");
+}
+
+.mainSwiper .slide_3 {
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1630648425.jpg");
+}
+
+.mainSwiper .slide_4 {
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1630548666.jpg");
+}
+
+.mainSwiper .slide_5 {
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1628583839.jpg");
+}
+
+/* 슬라이드 버튼 */
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  display: none;
+  position: absolute;
+  top: 43%;
+  z-index: 1;
+}
+
+.swiper-container:hover .swiper-button-prev-custom {
+  display: block;
+}
+
+.swiper-container:hover .swiper-button-next-custom {
+  display: block;
+}
+
+.mainSwiper .swiper-button-next {
+  display: none;
+}
+.mainSwiper .swiper-button-next-custom {
+  right: 102px;
+  width: 52px;
+  height: 52px;
+  background-image: url("https://res.kurly.com/pc/service/main/1908/ico_next1_x2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 52px 52px;
+  border-radius: 50%;
+}
+
+.mainSwiper .swiper-button-prev {
+  display: none;
+}
+.mainSwiper .swiper-button-prev-custom {
+  left: 102px;
+  width: 52px;
+  height: 52px;
+  background-image: url("https://res.kurly.com/pc/service/main/1908/ico_prev1_x2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 52px 52px;
+  border-radius: 50%;
+}

@@ -8,9 +8,15 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- fontawesome -->
-  <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e66717f547.js"   crossorigin="anonymous"></script>
   <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  
+  <!-- main.js -->
+  <script src="./src/main.js"></script>
+  
+
   <title>마켓컬리 :: LC 클론코딩</title>
 </head>
 <body>
@@ -114,6 +120,21 @@
         </div>
       </div>
     </header>
+    <!-- 메인 슬라이드 -->
+    <div class="swiper-container">
+      <div class="swiper mainSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide_1"></div>
+          <div class="swiper-slide slide_2"></div>
+          <div class="swiper-slide slide_3"></div>
+          <div class="swiper-slide slide_4"></div>
+          <div class="swiper-slide slide_5"></div>
+        </div>
+        <div class="swiper-button-next-custom"></div>
+        <div class="swiper-button-prev-custom"></div>
+      </div>
+    </div>
+
     <main>
 
     </main>
@@ -123,6 +144,13 @@
 
   </div>
 
-  
+  <script>
+    let swiper = new Swiper(".mainSwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next-custom",
+        prevEl: ".swiper-button-prev-custom",
+      },
+    });
+  </script>
 </body>
 </html>
