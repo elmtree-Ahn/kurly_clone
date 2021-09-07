@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>마켓컬리 :: LC 클론코딩</title>
 </head>
 <body>
   <div class="container">
@@ -30,13 +35,84 @@
             <a href="javascript:void(0)">
               고객센터
             </a>
+            <i class="fas fa-sort-down"></i>
+            <!-- 고객센터 서브 메뉴 -->
+            <ul class=cs__sub>
+              <li>
+                <a href="javascript:void(0)">공지사항</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">자주하는 질문</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">1:1 문의</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">대량주문 문의</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">상품 제안</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">에코포장 피드백</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
+      <!-- 로고 -->
       <div class="header__logo">
-      
+        <h1><img src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓 컬리 로고"></h1>
       </div>
-      <div class="header__menu"></div>
+      <!-- 메인메뉴 -->
+      <div class="header__menus">
+        <div class="inner">
+          <ul class='menus'>
+            <li class="menu menu__1">
+              <a href="javascript:void(0)">
+                <i class="fas fa-bars"></i>
+                <span>전체 카테고리</span>
+              </a>
+            </li>
+            <li class="menu menu__2">
+              <a href="javascript:void(0)">
+                <span></span>신상품
+              </a>
+            </li>
+            <li class="menu menu__3">
+              <a href="javascript:void(0)">
+                베스트
+              </a>
+            </li>
+            <li class="menu menu__4">
+              <a href="javascript:void(0)">
+                알뜰쇼핑
+              </a>
+            </li>
+            <li class="menu menu__5">
+              <a href="javascript:void(0)">
+                특가/혜택
+              </a>
+            </li>
+          </ul>
+          <!-- search -->
+          <div class="side_search">
+            <input type="text" placeholder="검색어를 입력해주세요.">
+            <img src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" alt="">
+          </div>
+          <!-- icons -->
+          <div class="icons">
+            <ul>
+              <li>
+                <img src="https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1" alt="배송정보">
+              </li>
+              <li>
+                <img src="https://res.kurly.com/pc/service/common/2011/ico_cart.svg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
 
