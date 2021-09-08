@@ -109,6 +109,7 @@ header .header__usermenu .list_menus .cs .fas {
 
 header .header__usermenu .list_menus .cs:hover .cs__sub {
   display: block;
+  z-index: 2;
 }
 
 /* 로고 */
@@ -226,6 +227,7 @@ header .header__menus .inner .icons ul li:nth-child(1) {
 /* main slide */
 .swiper-container {
   position: relative;
+  overflow: hidden;
 }
 
 .mainSwiper .swiper-slide {
@@ -327,6 +329,10 @@ header .header__menus .inner .icons ul li:nth-child(1) {
   width: var(--main-width);
 }
 
+.main_product .productSwiper {
+  overflow: hidden;
+}
+
 .main_product .swiper-slide .product__img {
   width: 249px;
   height: 320px;
@@ -344,9 +350,12 @@ header .header__menus .inner .icons ul li:nth-child(1) {
 }
 
 .main_product .swiper-slide .product__name {
+  display: block;
+  width: 249px;
   margin-top: 12px;
   font-size: var(--font-base);
   font-weight: 500;
+  line-height: 23px;
   color: var(--color-black);
 }
 
@@ -369,4 +378,28 @@ header .header__menus .inner .icons ul li:nth-child(1) {
   font-weight: 400;
   color: #999;
   text-decoration: line-through;
+}
+
+/* 프로덕트 버튼 */
+.main_product .product-wrap .product-swiper-button-next,
+.product-swiper-button-prev {
+  position: absolute;
+  top: 30%;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 58px 58px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.main_product .product-swiper-button-next {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_hover_x2.png?v=1");
+  right: -30px;
+}
+
+.main_product .product-swiper-button-prev {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+  left: -30px;
 }
