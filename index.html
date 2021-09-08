@@ -144,15 +144,43 @@
         <div class="product-wrap">
           <div class="productSwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
+              <!-- 슬라이드1 -->
+              <div class="swiper-slide slide_1">
+                <a href="javascript:void(0)" class="product__img">
+                  <img src="https://img-cf.kurly.com/shop/data/goods/1504525919243l0.jpg" alt="상품이미지" />
+                </a>
+                <a href="javascript:void(0)" class="product__name">[선물세트] 송강당 대명 공진보</a>
+                <div class="product__price">
+                  <p class="sale">10%</p>
+                  <p class="price">148,500원</p>
+                </div>
+                <div class="product__beforeSale">
+                  165,000원
+                </div>
+              </div>
+              <!-- 슬라이드2 -->
+              <div class="swiper-slide slide_2">
+                <a href="javascript:void(0)" class="product__img">
+                <img src="	https://img-cf.kurly.com/shop/data/goods/1618452162807l0.jpg" alt="상품이미지" />
+                </a>
+                <a href="javascript:void(0)" class="product__name">생성게알 60g</a>
+                <div class="product__price">
+                  <p class="sale">14%</p>
+                  <p class="price">15,394원</p>
+                </div>
+                <div class="product__beforeSale">
+                  17,900원
+                </div>
+              </div>
+              <!-- 슬라이드3 -->
+              <div class="swiper-slide slide_3">Slide 3</div>
+              <!-- 슬라이드4 -->
+              <div class="swiper-slide slide_4">Slide 4</div>
+              <div class="swiper-slide slide_5">Slide 5</div>
+              <div class="swiper-slide slide_6">Slide 6</div>
+              <div class="swiper-slide slide_7">Slide 7</div>
+              <div class="swiper-slide slide_8">Slide 8</div>
+              <div class="swiper-slide slide_9">Slide 9</div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -181,7 +209,7 @@
     //이 상품 어때요?
     var productswiper = new Swiper(".productSwiper", {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: -250,
         slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
