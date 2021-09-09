@@ -2,6 +2,7 @@
   /* COLOR */
   --color-black: #333333;
   --color-bright-black: #4c4c4c;
+  --color-bg-gray: #f5f5f595;
   --color-purple: #5f0080;
   --color-bright-purple: #bd76ff;
   --color-red: #fa622f;
@@ -109,7 +110,7 @@ header .header__usermenu .list_menus .cs .fas {
 
 header .header__usermenu .list_menus .cs:hover .cs__sub {
   display: block;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* 로고 */
@@ -127,19 +128,29 @@ header .header__logo img {
 }
 
 /* 메인메뉴 */
-header .header__menus .inner {
+.header__menus {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(220, 220, 220, 0.255);
+  z-index: 2;
+}
+
+.header__menus .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: var(--main-width);
+  margin: 0 auto;
 }
 
-header .header__menus .inner .menus {
+.header__menus .inner .menus {
   display: flex;
   justify-content: space-between;
 }
 
-header .header__menus .inner .menus a {
+.header__menus .inner .menus a {
   display: flex;
   align-items: center;
   height: 58px;
@@ -150,45 +161,45 @@ header .header__menus .inner .menus a {
   text-align: center;
 }
 
-header .header__menus .inner .menus a i {
+.header__menus .inner .menus a i {
   padding: 0 16px 4px 0;
   font-size: 18px;
   font-weight: 600;
 }
 
-header .header__menus .inner .menus .menu {
+.header__menus .inner .menus .menu {
   display: flex;
   justify-content: center;
   height: 55px;
 }
 
-header .header__menus .inner .menus .menu__1 {
+.header__menus .inner .menus .menu__1 {
   width: 165px;
   justify-content: flex-start;
 }
 
-header .header__menus .inner .menus .menu__2 {
+.header__menus .inner .menus .menu__2 {
   width: 124px;
 }
 
-header .header__menus .inner .menus .menu__3 {
+.header__menus .inner .menus .menu__3 {
   width: 116px;
 }
 
-header .header__menus .inner .menus .menu__4 {
+.header__menus .inner .menus .menu__4 {
   width: 124px;
 }
 
-header .header__menus .inner .menus .menu__5 {
+.header__menus .inner .menus .menu__5 {
   width: 116px;
 }
 
 /* search */
-header .header__menus .inner .side_search {
+.header__menus .inner .side_search {
   position: relative;
 }
 
-header .header__menus .inner .side_search input {
+.header__menus .inner .side_search input {
   height: 32px;
   width: 242px;
   padding: 0 20px;
@@ -199,28 +210,30 @@ header .header__menus .inner .side_search input {
   font-size: var(--font-sm);
 }
 
-header .header__menus .inner .side_search input::placeholder {
+.header__menus .inner .side_search input::placeholder {
   color: #a9a9a9;
 }
 
-header .header__menus .inner .side_search input:focus {
+.header__menus .inner .side_search input:focus {
   outline: none;
   background-color: #fff;
 }
 
-header .header__menus .inner .side_search img {
+.header__menus .inner .side_search img {
   position: absolute;
   right: 0;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 /* icons */
-header .header__menus .inner .icons ul {
+.header__menus .inner .icons ul {
   display: flex;
   align-items: center;
 }
-header .header__menus .inner .icons ul li:nth-child(1) {
+
+.header__menus .inner .icons ul li:nth-child(1) {
   margin-right: 20px;
 }
 
@@ -236,6 +249,7 @@ header .header__menus .inner .icons ul li:nth-child(1) {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: auto auto;
+  cursor: pointer;
 }
 
 .mainSwiper .slide_1 {
@@ -554,4 +568,172 @@ header .header__menus .inner .icons ul li:nth-child(1) {
   font-weight: 400;
   color: #999;
   text-decoration: line-through;
+}
+
+/* 특가/혜택 */
+.main_event {
+  background-color: #e6e6e646;
+  padding-bottom: 100px;
+}
+
+.main_event .title,
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 79px 0 35px;
+  color: var(--color-black);
+  font-size: var(--font-lg);
+  font-weight: 500;
+}
+
+.main_event .title img,
+.main_product .product_title img {
+  width: 32px;
+  height: 32px;
+}
+.main_event .inner,
+.inner {
+  width: var(--main-width);
+  margin: 0 auto;
+}
+
+.main_event .inner ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_event .inner ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_event .inner .imgBox {
+  width: 338px;
+  height: 338px;
+  overflow: hidden;
+}
+
+.main_event .inner ul li img {
+  width: 338px;
+  height: 338px;
+  transition-duration: 0.7s;
+}
+
+.main_event .inner ul li img:hover {
+  transform: scale(1.03);
+}
+
+.main_event .inner ul li .product__name {
+  margin: 17px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.main_event .inner ul li .product__description {
+  margin: 12px 0 0;
+  font-size: 16px;
+  color: #999;
+}
+
+/* 메인 배너 */
+.main_banner {
+  display: flex;
+  justify-content: center;
+}
+
+.main_banner img {
+  height: 140px;
+  width: 1050px;
+}
+
+/* MD의 추천 */
+.md__category {
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.md__category .category_wrap ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.md__category .category_wrap .list2 {
+  justify-content: center;
+}
+
+.md__category .category_wrap ul li {
+  margin: 0px 3px 22px;
+}
+
+.md__category .category_wrap ul li a {
+  display: block;
+  padding: 13px 20px;
+  background-color: #f2f2f277;
+  border-radius: 50px;
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+/* 셀렉트  */
+.md__category .category_wrap ul .btn_1 a {
+  display: block;
+  padding: 13px 20px;
+  background-color: var(--color-purple);
+  border-radius: 50px;
+  font-size: 14px;
+  color: white;
+}
+
+.md__category .category_wrap ul li a:hover {
+  background-color: rgba(238, 228, 238, 0.432);
+  color: var(--color-purple);
+}
+
+/* link cate */
+/* .md__category .link_cate {
+  margin: 0 auto;
+} */
+
+.md__category .link_cate .link {
+  width: 516px;
+  height: 56px;
+  margin: 0 auto;
+  padding: 16px 0 0 0;
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  font-size: 16px;
+  color: var(--color-black);
+  text-align: center;
+}
+
+/* 슬라이드 배경 회색 */
+.bg_gray {
+  background-color: #e6e6e646;
+  width: 100vw;
+}
+
+.bg_gray .product-wrap {
+  margin: 0 auto;
+}
+
+.main_365 .product_title {
+  padding-bottom: 0;
+}
+
+.main_product .product_description {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 40px;
+  font-size: 16px;
+  color: #999;
+  line-height: 20px;
+}
+
+/* 컬리의 레시피 */
+.main_product .recipeSwiper {
+  overflow: hidden;
 }
