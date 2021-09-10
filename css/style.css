@@ -272,6 +272,10 @@ header .header__logo img {
   background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1628583839.jpg");
 }
 
+.mainSwiper .slide_6 {
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1583112495.jpg");
+}
+
 /* 슬라이드 버튼 */
 .mainSwiper-button-next,
 .mainSwiper-button-prev {
@@ -336,6 +340,20 @@ header .header__logo img {
   font-size: var(--font-lg);
   font-weight: 500;
 }
+
+/* 사이드배너 side_bnr */
+.side__bnr {
+  display: flex;
+  flex-direction: column;
+}
+
+.side__bnr .bnr__img {
+  width: 80px;
+  height: 120px;
+  margin-bottom: 3px;
+}
+
+/* 사이드 배너 만들어야 합니다! */
 
 /* 슬라이드 */
 .main_product .product-wrap {
@@ -926,16 +944,37 @@ footer .footer__inner .footer__cs {
 footer .line {
   width: var(--main-width);
   height: 1px;
-  margin: 10px auto;
+  margin: 20px auto;
   background-color: #dfdfdf;
 }
 
+/* 링크 */
 footer .link {
   display: flex;
+  width: var(--main-width);
+  margin: 10px auto 60px;
 }
 
 footer .link .link_box {
   display: flex;
   align-items: center;
+  margin-right: 70px;
 }
-/* 푸터를 열심히 하자!! */
+
+footer .link .link_box img {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+footer .link .link_box .toss {
+  width: 102px;
+}
+
+footer .link .link_box .txt {
+  padding-top: 1px;
+  font-size: 10px;
+  color: #999;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+}
