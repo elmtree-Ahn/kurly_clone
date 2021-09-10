@@ -156,7 +156,7 @@ header .header__logo img {
   height: 58px;
   color: var(--color-black);
   font-size: var(--font-base);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.3px;
   text-align: center;
 }
@@ -737,3 +737,205 @@ header .header__logo img {
 .main_product .recipeSwiper {
   overflow: hidden;
 }
+
+.main_product .recipeSwiper .swiper-slide {
+  height: 303px;
+}
+
+.main_product .recipeSwiper .swiper-slide .product__img {
+  width: 338px;
+  height: 225px;
+  overflow: hidden;
+}
+
+.main_product .recipeSwiper .swiper-slide img {
+  width: 338px;
+  height: 225px;
+  transition-duration: 0.3s;
+}
+
+.main_product .recipeSwiper .swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+.main_product .recipeSwiper .swiper-slide .product__name {
+  display: flex;
+  justify-content: center;
+  margin: 12px auto 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+/* 인스타그램 고객 후기 */
+.main_product .instaSwiper {
+  overflow: hidden;
+}
+
+.main_product .instaSwiper .swiper-slide {
+  height: 220px;
+}
+
+.main_product .instaSwiper .swiper-slide .product__img {
+  width: 175px;
+  height: 175px;
+}
+
+.main_product .instaSwiper .swiper-slide img {
+  width: 175px;
+  height: 175px;
+}
+
+.main_product .instaSwiper .swiper-slide img:hover {
+  transform: none;
+}
+
+.main_product .insta_textBox {
+  margin: 0 auto 100px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.main_product .insta_textBox span {
+  color: #999;
+}
+
+.main_product .insta_textBox a {
+  margin-top: 12px;
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+/* footer */
+footer {
+  margin-top: 30px;
+}
+
+footer .footer__inner {
+  display: flex;
+  width: var(--main-width);
+  margin: 0 auto;
+}
+
+/* footer__cs */
+footer .footer__inner .footer__cs {
+  width: 534px;
+}
+
+.footer__cs .footer__title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer__cs .csFlex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer__cs .csFlex .number {
+  width: 140px;
+  padding-top: 4px;
+  margin-right: 16px;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.footer__cs .csFlex .csTime span {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: -0.2px;
+}
+
+.footer__cs .csFlex .csTime .time {
+  margin-top: 2px;
+  color: rgb(157, 157, 157);
+}
+
+.footer__cs .csFlex .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  height: 40px;
+  width: 140px;
+  border: 1px solid #cfcccc;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: var(--color-black);
+}
+/* footer link */
+.footer__link {
+  padding-top: 5px;
+}
+
+.footer__link .company_list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer__link .company_list li {
+  margin-right: 20px;
+}
+
+.footer__link .company_list li a {
+  color: var(--color-black);
+  font-size: 15px;
+}
+
+.footer__link .company_info li {
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.4px;
+  line-height: 18px;
+}
+
+.footer__link .company_info li a {
+  display: inline;
+  font-size: 11px;
+  color: var(--color-purple);
+  letter-spacing: 0.4px;
+  line-height: 20px;
+}
+
+.footer__link .company_info .reserved {
+  margin-top: 20px;
+}
+
+/* company__sns */
+.company__sns ul {
+  display: flex;
+}
+
+.company__sns ul li {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.company__sns ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* 라인 */
+footer .line {
+  width: var(--main-width);
+  height: 1px;
+  margin: 10px auto;
+  background-color: #dfdfdf;
+}
+
+footer .link {
+  display: flex;
+}
+
+footer .link .link_box {
+  display: flex;
+  align-items: center;
+}
+/* 푸터를 열심히 하자!! */
