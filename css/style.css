@@ -253,7 +253,7 @@ header .header__logo img {
 }
 
 .mainSwiper .slide_1 {
-  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1630490938.jpg");
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1631180558.jpg");
 }
 
 .mainSwiper .slide_2 {
@@ -276,6 +276,9 @@ header .header__logo img {
   background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1583112495.jpg");
 }
 
+.mainSwiper .slide_7 {
+  background-image: url("https://img-cf.kurly.com/shop/data/main/1/pc_img_1630490938.jpg");
+}
 /* 슬라이드 버튼 */
 .mainSwiper-button-next,
 .mainSwiper-button-prev {
@@ -324,6 +327,77 @@ header .header__logo img {
   border-radius: 50%;
 }
 
+/* 메인 */
+main {
+  position: relative;
+}
+
+main .side__bnr__absolute {
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  height: 100%;
+}
+
+/* 사이드배너 side_bnr */
+main .side__bnr {
+  display: flex;
+  position: sticky;
+  top: 100px;
+  right: 100px;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.side__bnr .bnr__img {
+  width: 80px;
+  height: 120px;
+  margin-bottom: 8px;
+}
+
+.side__bnr .side_menu {
+  width: 80px;
+  margin-bottom: 8px;
+}
+
+.side__bnr .side_menu a {
+  height: 29px;
+  padding-top: 5px;
+  border: 1px solid #ddd;
+  color: var(--color-bright-black);
+  font-size: 12px;
+  text-align: center;
+}
+
+.side__bnr .side_menu a:hover {
+  color: var(--color-purple);
+}
+
+.side__bnr .side_recent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  color: var(--color-bright-black);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.side__bnr .side_recent span {
+  margin: 8px 0 5px;
+}
+
+.side__bnr .side_recent i {
+  color: #ddd;
+}
+
+.side__bnr .side_recent img {
+  margin: 1px 0;
+  max-width: 100%;
+}
+
 /* 이 상품 어때요? */
 /* 타이틀 */
 .main_product {
@@ -340,20 +414,6 @@ header .header__logo img {
   font-size: var(--font-lg);
   font-weight: 500;
 }
-
-/* 사이드배너 side_bnr */
-.side__bnr {
-  display: flex;
-  flex-direction: column;
-}
-
-.side__bnr .bnr__img {
-  width: 80px;
-  height: 120px;
-  margin-bottom: 3px;
-}
-
-/* 사이드 배너 만들어야 합니다! */
 
 /* 슬라이드 */
 .main_product .product-wrap {
