@@ -8,6 +8,7 @@
   <!-- css -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
   <!-- swiper -->
@@ -72,7 +73,7 @@
       </div>
       <!-- 로고 -->
       <div class="header__logo">
-        <h1><img src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓 컬리 로고"></h1>
+        <h1><a href="index.html"><img src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓 컬리 로고"></a></h1>
       </div>
     </header>
     <!-- 메인메뉴 -->
@@ -125,7 +126,33 @@
       </div>
     </div>
     <main>
-
+      <!-- 로그인 페이지 -->
+      <div class="login__inner">
+        <div class="login__title">
+          로그인
+        </div>
+        <form class="login__box">
+          <input type="text" class="inputBox ID" placeholder="아이디를 입력해주세요">
+          <input type="password" class="inputBox PW" placeholder="비밀번호를 입력해주세요">
+          <div class="checkbox_save">
+            <div class="check">
+              <input type="checkbox" name="보안접속" id="">보안접속
+            </div>
+            <div class="find">
+              <a href="javascript:void(0)">
+                아이디 찾기
+              </a>
+              <span>|</span>
+              <a href="javascript:void(0)">
+                비밀번호 찾기
+              </a>
+            </div>
+          </div>
+          <button type="submit" class="login_btn"">로그인</button>
+          <a class="sign_up"
+          href="javascript:void(0)">회원가입</a>
+        </form>
+      </div>
 
     </main>
     <!-- footer -->
